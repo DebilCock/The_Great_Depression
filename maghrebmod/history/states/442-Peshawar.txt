@@ -1,0 +1,21 @@
+
+state={
+	id=442
+	name="STATE_442"
+	manpower = 4684400
+	
+	state_category = rural
+
+	history={
+		owner = PAK
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+		}
+		add_core_of = PAK
+	}
+
+	provinces={
+		1910 1978 2041 2084 4558 4979 4998 8022 8106 10173 10905 12717 12763 
+	}
+}

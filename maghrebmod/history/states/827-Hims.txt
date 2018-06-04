@@ -1,0 +1,16 @@
+state= {
+	id=827
+	name="STATE_827"
+	manpower = 303411
+
+	state_category = wasteland
+
+	history= {
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+	}
+	provinces = { 1056 1072 10383 12442 }
+}

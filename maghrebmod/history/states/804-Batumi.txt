@@ -1,0 +1,20 @@
+state= {
+	id=804
+	name="STATE_804"
+	manpower = 261000
+
+	state_category = town
+
+	history= {
+		owner = GEO
+		victory_points = {
+			3653 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = GEO
+	}
+	provinces = { 3653 7454 10403 13211 13212 }
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=756
+	name="STATE_756"
+	manpower = 1000000
+	resources={
+		oil=35
+	}
+
+	state_category = city
+
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		add_core_of = ROM
+		add_claim_by = BUL
+	}
+
+	provinces={
+		657 687 3076 9635
+	}
+}

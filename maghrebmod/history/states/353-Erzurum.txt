@@ -1,0 +1,20 @@
+
+state={
+	id=353
+	name="STATE_353"
+	manpower = 356005
+	state_category = rural
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUR
+		add_claim_by = ARM
+	}
+
+	provinces={
+		652 6991 9954 11853 13121 13213
+	}
+}

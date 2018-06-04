@@ -1,0 +1,16 @@
+state= {
+	id=805
+	name="STATE_805"
+	manpower = 291022
+
+	state_category = town
+
+	history= {
+		owner = ARM
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ARM
+	}
+	provinces = { 10472 12441 13208 13209 13210}
+}

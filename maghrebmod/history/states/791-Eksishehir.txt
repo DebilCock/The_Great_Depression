@@ -1,0 +1,20 @@
+state= {
+	id=791
+	name="STATE_791"
+	manpower = 308303
+	resources={
+		chromium=10
+	}
+	
+	state_category = rural
+
+	history= {
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = TUR
+	}
+	provinces = { 909 3907 3951 6808 }
+}

@@ -1,0 +1,22 @@
+state={
+	id=767
+	name="STATE_767" # Stanislawow
+	manpower = 1090150
+	
+	state_category = town
+	
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+
+		}
+		add_core_of = POL
+		add_core_of = UKR
+	}
+
+	provinces={
+		3434 6431 6483
+	}
+}

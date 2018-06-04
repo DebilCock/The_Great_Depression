@@ -1,0 +1,24 @@
+state={
+	id = 781
+	name = "STATE_781" 
+	manpower = 650000
+	state_category = town
+	provinces={ 3916 5014 6826 8123 10106 10793 10804 10811 }
+	resources={
+		oil=10
+	}
+	history = {
+		owner = KUR
+		add_core_of = KUR
+		add_core_of = IRQ
+		victory_points = {
+			10106 1 
+		}
+		victory_points = {
+			3916 5
+		}
+		buildings = {
+			infrastructure=3
+		}
+	}
+}

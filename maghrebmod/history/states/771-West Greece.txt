@@ -1,0 +1,18 @@
+state={
+	id = 771
+	name = "STATE_771" 
+	manpower = 500000
+	state_category = town
+	provinces={ 1205 4193 7211 12001 }
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			infrastructure=4
+			4193 = {
+				naval_base = 2
+
+			}
+		}
+	}
+}

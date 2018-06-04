@@ -1,0 +1,16 @@
+state={
+	id = 777
+	name = "STATE_777" 
+	manpower = 500000
+	state_category = rural
+	provinces={ 1306 4282 4338 7358 10143 10199 10212 10240 12171 12186 12228 }
+	history = {
+		owner = SUL
+		add_core_of = SUL
+		add_core_of = MAL
+		buildings = {
+			infrastructure=4
+			industrial_complex = 1
+		}
+	}
+}

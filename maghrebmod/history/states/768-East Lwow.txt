@@ -1,0 +1,26 @@
+state={
+	id=768
+	name="STATE_768" # Lwow
+	manpower = 27800
+	
+	state_category = city
+	
+	history={
+		owner = SOV
+		victory_points = {
+			9454 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 5
+		}
+		add_core_of = POL
+		add_core_of = SOV
+		add_core_of = UKR
+	}
+
+	provinces={
+		9558 9454 491 3483 11427 3562 438
+	}
+}

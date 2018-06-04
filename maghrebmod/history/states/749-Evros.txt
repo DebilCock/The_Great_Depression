@@ -1,0 +1,15 @@
+state={
+	id = 749
+	name = "STATE_749" 
+	manpower = 150000
+	state_category = town
+	provinces={ 11905 11774 }
+	history = {
+		owner = BUL
+        add_core_of = BUL
+		add_core_of = GRE
+		buildings = {
+			infrastructure=4
+		}
+	}
+}

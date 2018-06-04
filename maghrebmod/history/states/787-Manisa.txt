@@ -1,0 +1,21 @@
+state= {
+	id=787
+	name="STATE_787"
+	manpower = 444702
+	resources={
+		chromium=34
+	}
+	
+	state_category = town
+
+	history= {
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = TUR
+	}
+	provinces=
+	{ 928 9921 11848 11898 }
+}

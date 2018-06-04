@@ -1,0 +1,15 @@
+state= {
+	id=830
+	name="STATE_830"
+	manpower = 162542
+	state_category = rural
+
+	history= {
+		owner = IRQ
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = IRQ
+	}
+	provinces = { 78 12855 }
+}

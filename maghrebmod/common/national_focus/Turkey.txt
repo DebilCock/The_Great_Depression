@@ -1,0 +1,912 @@
+focus_tree = {
+	id = turkey
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	focus = {
+		id = TUR_nasledie
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = TUR_constitution
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_nasledie
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = TUR_mladoturki
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_constitution
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = TUR_atatyurk
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_mladoturki
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = TUR_coalition
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_atatyurk
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = TUR_compromis
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_coalition
+		}
+		mutually_exclusive = {
+			focus = TUR_enver
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = TUR_enver
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_coalition
+		}
+		mutually_exclusive = {
+			focus = TUR_compromis
+			focus = TUR_revolution
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = TUR_atatyurk_minus
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_enver
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = TUR_par_minus
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_atatyurk_minus
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = TUR_1920god
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_par_minus
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = TUR_revolution
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_coalition
+		}
+		mutually_exclusive = {
+			focus = TUR_enver
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = TUR_ankara
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_revolution
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = TUR_fitil
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_ankara
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = TUR_kemalist
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_fitil
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = TUR_civil_war
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_1920god
+		}
+		prerequisite = {
+			focus = TUR_kemalist
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = TUR_coalition_save
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_compromis
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = TUR_par_reforma
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_coalition_save
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = TUR_samoupravlenie
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_par_reforma
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = TUR_new_const
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_samoupravlenie
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = TUR_elections
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_new_const
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = TUR_tretiy_srok
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_elections
+		}
+		mutually_exclusive = {
+			focus = TUR_atatyurk_elec
+		}
+		x = 4
+		y = 13
+
+	}
+	focus = {
+		id = TUR_atatyurk_elec
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_elections
+		}
+		mutually_exclusive = {
+			focus = TUR_tretiy_srok
+			focus = TUR_liberal_elec
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = TUR_liberal_elec
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_elections
+		}
+		mutually_exclusive = {
+			focus = TUR_atatyurk_elec
+		}
+		x = 22
+		y = 13
+
+	}
+	focus = {
+		id = TUR_liberalisation
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_liberal_elec
+		}
+		x = 22
+		y = 14
+
+	}
+	focus = {
+		id = TUR_burjua
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_liberalisation
+		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = TUR_invest
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_liberalisation
+		}
+		x = 22
+		y = 15
+
+	}
+	focus = {
+		id = TUR_freemark
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_invest
+		}
+		x = 20
+		y = 16
+
+	}
+	focus = {
+		id = TUR_konkurent
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_invest
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = TUR_guarantees
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_invest
+		}
+		x = 24
+		y = 16
+
+	}
+	focus = {
+		id = TUR_prava
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_guarantees
+		}
+		x = 24
+		y = 17
+
+	}
+	focus = {
+		id = TUR_nalogi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_burjua
+		}
+		x = 30
+		y = 15
+
+	}
+	focus = {
+		id = TUR_tenderi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_nalogi
+		}
+		x = 30
+		y = 16
+
+	}
+	focus = {
+		id = TUR_tender
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_tenderi
+		}
+		mutually_exclusive = {
+			focus = TUR_tender2
+		}
+		x = 28
+		y = 17
+
+	}
+	focus = {
+		id = TUR_tender2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_tenderi
+		}
+		mutually_exclusive = {
+			focus = TUR_tender
+		}
+		x = 32
+		y = 17
+
+	}
+	focus = {
+		id = TUR_torg
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_tender
+		}
+		x = 28
+		y = 18
+
+	}
+	focus = {
+		id = TUR_turism
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_torg
+		}
+		x = 28
+		y = 19
+
+	}
+	focus = {
+		id = TUR_kurorti
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_turism
+		}
+		x = 28
+		y = 20
+
+	}
+	focus = {
+		id = TUR_specialist
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_kurorti
+		}
+		x = 28
+		y = 21
+
+	}
+	focus = {
+		id = TUR_gori
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_specialist
+		}
+		x = 28
+		y = 22
+
+	}
+	focus = {
+		id = TUR_zavodi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_tender2
+		}
+		x = 32
+		y = 18
+
+	}
+	focus = {
+		id = TUR_invest2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_pustiri
+		}
+		x = 32
+		y = 20
+
+	}
+	focus = {
+		id = TUR_ankara2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_metodi
+		}
+		prerequisite = {
+			focus = TUR_invest2
+		}
+		x = 34
+		y = 21
+
+	}
+	focus = {
+		id = TUR_selxoz
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_tender2
+		}
+		x = 36
+		y = 18
+
+	}
+	focus = {
+		id = TUR_lgoti
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_selxoz
+		}
+		x = 36
+		y = 19
+
+	}
+	focus = {
+		id = TUR_metodi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_lgoti
+		}
+		x = 36
+		y = 20
+
+	}
+	focus = {
+		id = TUR_streli
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_atatyurk_elec
+		}
+		x = 11
+		y = 14
+
+	}
+	focus = {
+		id = TUR_nationalism
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_streli
+		}
+		x = 5
+		y = 15
+
+	}
+	focus = {
+		id = TUR_zdravooxranenie
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_streli
+		}
+		x = 9
+		y = 15
+
+	}
+	focus = {
+		id = TUR_klassi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_streli
+		}
+		x = 13
+		y = 15
+
+	}
+	focus = {
+		id = TUR_nonfreemark
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_streli
+		}
+		x = 17
+		y = 15
+
+	}
+	focus = {
+		id = TUR_social
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_zdravooxranenie
+		}
+		x = 9
+		y = 16
+
+	}
+	focus = {
+		id = TUR_bomzhi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_social
+		}
+		x = 8
+		y = 17
+
+	}
+	focus = {
+		id = TUR_rabi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_social
+		}
+		x = 10
+		y = 17
+
+	}
+	focus = {
+		id = TUR_hati
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_bomzhi
+		}
+		x = 8
+		y = 18
+
+	}
+	focus = {
+		id = TUR_rabi2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_rabi
+		}
+		x = 10
+		y = 18
+
+	}
+	focus = {
+		id = TUR_bomzhi2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_hati
+		}
+		x = 8
+		y = 19
+
+	}
+	focus = {
+		id = TUR_rabden
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_rabi2
+		}
+		x = 10
+		y = 19
+
+	}
+	focus = {
+		id = TUR_kemalist2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_rabden
+		}
+		prerequisite = {
+			focus = TUR_bomzhi2
+		}
+		x = 9
+		y = 20
+
+	}
+	focus = {
+		id = TUR_modern
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_klassi
+		}
+		x = 13
+		y = 16
+
+	}
+	focus = {
+		id = TUR_familii
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_modern
+		}
+		x = 13
+		y = 17
+
+	}
+	focus = {
+		id = TUR_obrazovanie
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_familii
+		}
+		x = 13
+		y = 18
+
+	}
+	focus = {
+		id = TUR_zhd
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_nonfreemark
+		}
+		x = 17
+		y = 16
+
+	}
+	focus = {
+		id = TUR_pyatiletka
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_zhd
+		}
+		x = 17
+		y = 17
+
+	}
+	focus = {
+		id = TUR_selyxoz
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_pyatiletka
+		}
+		x = 15
+		y = 19
+
+	}
+	focus = {
+		id = TUR_industry
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_pyatiletka
+		}
+		x = 17
+		y = 19
+
+	}
+	focus = {
+		id = TUR_zakon
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_pyatiletka
+		}
+		x = 19
+		y = 19
+
+	}
+	focus = {
+		id = TUR_zemreforma
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_selyxoz
+		}
+		x = 15
+		y = 20
+
+	}
+	focus = {
+		id = TUR_konstan
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_industry
+		}
+		x = 17
+		y = 20
+
+	}
+	focus = {
+		id = TUR_chastniki
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_zakon
+		}
+		x = 19
+		y = 20
+
+	}
+	focus = {
+		id = TUR_razdacha
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_zemreforma
+		}
+		x = 15
+		y = 21
+
+	}
+	focus = {
+		id = TUR_razvitiezemli
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_konstan
+		}
+		x = 17
+		y = 21
+
+	}
+	focus = {
+		id = TUR_monopoly
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_chastniki
+		}
+		x = 19
+		y = 21
+
+	}
+	focus = {
+		id = TUR_tyurkizacia
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_nationalism
+		}
+		x = 5
+		y = 16
+
+	}
+	focus = {
+		id = TUR_komissia
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_tyurkizacia
+		}
+		x = 5
+		y = 17
+
+	}
+	focus = {
+		id = TUR_humanism
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_komissia
+		}
+		x = 5
+		y = 18
+
+	}
+	focus = {
+		id = TUR_udostoverenie
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_humanism
+		}
+		x = 5
+		y = 19
+
+	}
+	focus = {
+		id = TUR_assimilation
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_udostoverenie
+		}
+		x = 5
+		y = 20
+
+	}
+	focus = {
+		id = TUR_turks
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_assimilation
+		}
+		x = 5
+		y = 21
+
+	}
+	focus = {
+		id = TUR_pustiri
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = TUR_zavodi
+		}
+		x = 32
+		y = 19
+
+	}
+}

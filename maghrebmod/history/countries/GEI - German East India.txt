@@ -1,0 +1,45 @@
+capital = 668
+
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+
+    parties = {
+        paternalism = { 
+            popularity = 50
+        }
+
+        natsynd = {
+            popularity = 15
+        }
+        
+        conservatism = {
+            popularity = 15
+        }
+        
+        liberalism = { 
+            popularity = 30
+        }
+    }
+    
+    ruling_party = paternalism
+    elections_allowed = no
+}
+
+create_country_leader = {
+	
+	name = "Eduard von Liebert"
+    desc = "POLITICS_EDUARD_VON_LIEBERT_DESC"
+	picture = "gfx/leaders/GEI/Eduard_von_Liebert"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = { 
+		
+			}
+}

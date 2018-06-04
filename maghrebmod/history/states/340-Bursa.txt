@@ -1,0 +1,28 @@
+
+state={
+	id=340
+	name="STATE_340"
+	manpower = 376527
+	resources={
+		chromium=22
+	}
+
+	state_category = town
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			947 1 
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		947 3786 11867 
+	}
+}

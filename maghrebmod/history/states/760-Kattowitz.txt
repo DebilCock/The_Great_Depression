@@ -1,0 +1,31 @@
+
+state={
+	id=760
+	name="STATE_760" 
+	manpower = 500000
+	
+	state_category = city
+
+	resources={
+		chromium=10
+		aluminium=30
+	}
+	
+	history={
+		owner = GER
+		victory_points = {
+			6464 5	
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+
+		add_core_of = GER
+
+	}
+
+	provinces={
+		506 6464
+	}
+}

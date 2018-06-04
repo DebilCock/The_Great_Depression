@@ -1,0 +1,14 @@
+state={
+	id = 746
+	name = "STATE_746" 
+	manpower = 50000
+	state_category = rural
+	provinces={ 6761 11689 }
+	history = {
+		owner = ROM
+                add_core_of = ROM
+		buildings = {
+			infrastructure=5
+		}
+	}
+}

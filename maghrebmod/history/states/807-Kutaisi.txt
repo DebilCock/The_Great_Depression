@@ -1,0 +1,17 @@
+state= {
+	id=807
+	name="STATE_807"
+	manpower = 761435
+
+	state_category = town
+
+	history= {
+		owner = GEO
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = GEO
+	}
+	provinces = { 654 772 3656 3658 9626 }
+}

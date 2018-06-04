@@ -1,0 +1,14 @@
+state={
+	id = 748
+	name = "STATE_748" 
+	manpower = 50000
+	state_category = town
+	provinces={ 12029 }
+	history = {
+		owner = FRA
+		add_core_of = SYR
+		buildings = {
+			infrastructure=3
+		}
+	}
+}

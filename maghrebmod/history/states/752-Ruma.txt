@@ -1,0 +1,22 @@
+
+state={
+	id=752
+	name="STATE_752" 
+	manpower = 100000
+	
+	state_category = rural
+
+	history={
+		owner = CRO
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = SER
+		add_core_of = YUG
+		add_core_of = CRO
+	}
+
+	provinces={
+		6647 11577
+	}
+}

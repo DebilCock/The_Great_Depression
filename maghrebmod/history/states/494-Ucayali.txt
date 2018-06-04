@@ -1,0 +1,21 @@
+
+state={
+	id=494
+	name="STATE_494"
+	manpower = 735826
+	
+	state_category = rural
+	
+
+	history={
+		owner = BBR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = PRU
+	}
+
+	provinces={
+		11010 2147 12939 5232 12965 8254 8185 13083 2198 5216 10960 13083 12919
+	}
+}

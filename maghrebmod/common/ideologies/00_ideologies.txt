@@ -1,0 +1,396 @@
+ideologies = {
+	
+	anarchism = {
+		
+		types = {
+		
+		    anarcho_communism = {
+			}
+			
+			anarcho_syndicalism = {
+			}
+			
+			classic_anarchism = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 112 33 33 }
+		
+		war_impact_on_world_tension = 0.30		#Commie less threatening
+		faction_impact_on_world_tension = 0.1
+		
+		ai_demsoc = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
+		}
+		
+		modifiers = {
+			puppet_cost_factor = -0.3
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	communism = {
+		
+		types = {
+		
+		    national_communism  = {
+			}
+			
+			authoritarian_socialism  = {
+			}
+			
+			bolshevism = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 209 35 35 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			puppet_cost_factor = -0.3
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	demsoc = {
+		
+		types = {
+		
+		    democratic_socialism = {
+			}
+			
+			utopian_socialism = {
+			}
+			
+			libertary_socialism = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 234 79 102 }
+		
+		war_impact_on_world_tension = 0.55		#Commie less threatening
+		faction_impact_on_world_tension = 0.3
+		
+		ai_demsoc = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+		}
+		
+		modifiers = {
+			puppet_cost_factor = -0.2
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+	
+	reformism = {
+	
+		types = {
+			
+			social_democracy = {
+			}
+			
+			progressivism = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 234 103 217 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		war_impact_on_world_tension = -0.8
+		faction_impact_on_world_tension = -0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 0.90
+			join_faction_tension = 0.60
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.20 #plus 50% trade opinion
+		}
+		ai_reformist = yes
+	}
+	
+	liberalism = {
+	
+		types = {
+		
+		    classical_liberalism = {
+			}
+			
+			social_liberalism = {
+			}
+			
+			national_liberalism = {
+			}
+
+		}
+		
+		dynamic_faction_names = {}
+		
+		color = { 191 181 0 }
+		
+		
+		war_impact_on_world_tension = 0.35		#no major danger
+		faction_impact_on_world_tension = 0.2
+		
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = yes
+			can_lower_tension = yes
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.1 #30% easier to influence
+			generate_wargoal_tension = 0.4
+			join_faction_tension = 0.3
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+
+		ai_liberal = yes
+	}
+	
+	conservatism = {
+	
+		types = {
+		
+		    liberal_conservatism = {
+			}
+		
+			social_conservatism = {
+			}
+		
+			neoconservatism = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 33 28 119 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		war_impact_on_world_tension = -1.0
+		faction_impact_on_world_tension = -0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_conservative = yes
+	}
+	
+	natsynd = {
+	
+		types = {
+		
+		    national_syndicalism  = {
+			}
+			
+			rexisme  = {
+			}
+			
+			faisceaux  = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 150 75 0 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+		}
+
+		ai_natsynd = yes 
+	}
+	
+	paternalism = {
+	
+		types = {
+		
+		    national_democracy = {
+			}
+			
+			statism = {
+			}
+			
+			nationalism = {
+			}
+		
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 68 79 90 }
+		
+		war_impact_on_world_tension = 0.4       
+		faction_impact_on_world_tension = 0.7
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.50
+		}
+
+		ai_paternalist = yes
+	}
+	
+	traditionalism = {
+	
+		types = {
+		
+		    elitisme = {
+			}
+			
+			reactionism = {
+			}
+			
+			integralism = {
+			}
+			
+			africanism = {
+			}
+
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 0 49 83 }
+		
+		war_impact_on_world_tension = 0.6       
+		faction_impact_on_world_tension = 0.9
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.60
+		}
+
+		ai_traditionalist = yes
+	}
+	
+}

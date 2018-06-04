@@ -1,0 +1,23 @@
+
+state={
+	id=757
+	name="STATE_757" 
+	manpower = 100000
+	
+	state_category = town
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		841 966 3980 9837
+	}
+}

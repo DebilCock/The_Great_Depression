@@ -1,0 +1,21 @@
+state={
+	id = 778
+	name = "STATE_778" 
+	manpower = 255000
+	state_category = rural
+	provinces={ 1404 7231 7415 10325 12243 }
+	resources={
+		rubber=50
+		oil=10
+	}
+	history = {
+		owner = SUL
+		add_core_of = SUL
+		buildings = {
+			infrastructure=3
+			10325 = {
+				naval_base = 1
+			}
+		}
+	}
+}

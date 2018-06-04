@@ -1,0 +1,15 @@
+state= {
+	id=811
+	name="STATE_811"
+	manpower = 952420
+	state_category = town
+
+	history= {
+		owner = AZR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AZR
+	}
+	provinces = { 1467 1539 1610 9715 11674 11704 }
+}

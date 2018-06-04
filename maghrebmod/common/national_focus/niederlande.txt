@@ -1,0 +1,462 @@
+focus_tree = {
+	id = dutch_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HOL
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = HOL_the_failure_of_the_revolution
+		icon = GFX_goal_unknown
+		mutually_exclusive = { focus = HOL_the_fall_of_imperialism }
+		x = 1
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_to_strengthen_the_power
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_failure_of_the_revolution }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_the_dispersion_of_the_parliament
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_to_strengthen_the_power }
+		mutually_exclusive = { focus = HOL_control_over_parliament  }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_military_reforms
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_dispersion_of_the_parliament }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	
+	focus = {
+		id = HOL_to_restore_its_former_maritime_greatness
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_military_reforms }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_neocolonialism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_to_restore_its_former_maritime_greatness }
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_control_over_parliament
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_to_strengthen_the_power }
+		mutually_exclusive = { focus = HOL_the_dispersion_of_the_parliament  }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_political_reforms
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_control_over_parliament }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_christian_democracy
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_political_reforms }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_to_maintain_the_colony
+		icon = GFX_goal_unknown
+		prerequisite = { 
+		    focus = HOL_christian_democracy
+            focus = HOL_to_secure_neutrality
+			focus = HOL_good_with_his_fists
+		}
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_the_fall_of_imperialism
+		icon = GFX_goal_unknown
+		mutually_exclusive = { focus = HOL_the_failure_of_the_revolution }
+		x = 7
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_the_liberal_government
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_fall_of_imperialism }
+		mutually_exclusive = { focus = HOL_left_the_government }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_the_great_batavian_republic
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_liberal_government }
+		mutually_exclusive = { focus = HOL_the_republic_of_holland }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_social_reform
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_great_batavian_republic }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_to_secure_neutrality
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_social_reform }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_the_republic_of_holland
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_liberal_government }
+		mutually_exclusive = { focus = HOL_the_great_batavian_republic }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_market_reforms
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_republic_of_holland }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_good_with_his_fists
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_market_reforms }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_decolonization
+		icon = GFX_goal_unknown
+		prerequisite = { 
+		    focus = HOL_good_with_his_fists
+			focus = HOL_will_bring_socialism
+		}
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_left_the_government
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_fall_of_imperialism }
+		mutually_exclusive = { focus = HOL_the_liberal_government }
+		x = 9
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_the_socialist_parliament
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_left_the_government }
+		mutually_exclusive = { focus = HOL_socialism_in_the_netherlands }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_democracy_of_the_soviets
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_the_socialist_parliament }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_will_bring_socialism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_democracy_of_the_soviets }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_socialism_in_the_netherlands
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_left_the_government }
+		mutually_exclusive = { focus = HOL_the_socialist_parliament }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_socialist_leader
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_socialism_in_the_netherlands }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_save_socialism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_socialist_leader }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+	
+	focus = {
+		id = HOL_socialism_in_the_colony
+		icon = GFX_goal_unknown
+		prerequisite = { focus = HOL_save_socialism }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+		}
+		completion_reward = {	
+		}
+	}
+}

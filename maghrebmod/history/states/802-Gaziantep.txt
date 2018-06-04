@@ -1,0 +1,19 @@
+state= {
+	id=802
+	name="STATE_802"
+	manpower = 145440
+
+	state_category = town
+
+	history= {
+		owner = TUR
+		victory_points = {
+			9893 3 
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces = { 3889 9893 }
+}
